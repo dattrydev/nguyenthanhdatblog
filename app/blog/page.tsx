@@ -4,7 +4,7 @@ import ListLayout from '@/layouts/ListLayoutWithTags';
 import { usePostContext } from '../../context/PostContext';
 import { useTagContext } from '../../context/TagContext';
 
-export default function BlogPage(props: { searchParams: Promise<{ page: string }> }) {
+export default function BlogPage() {
 	const { postList, paging } = usePostContext();
 	const { tagList } = useTagContext();
 

@@ -8,7 +8,7 @@ export interface Post {
 	slug: string;
 	category: Category;
 	tags: Tag[];
-	createAt: string;
+	createdAt: string;
 }
 
 export type PostList = Omit<Post, 'content'> & {
@@ -18,8 +18,8 @@ export type PostList = Omit<Post, 'content'> & {
 export type PostListRequest = Partial<
 	Pick<Post, 'title'> & {
 		description: string;
-		categoryName: string;
-		tagsName: string;
+		categorySlug: string;
+		tagsSlug: string;
 	}
 >;
 

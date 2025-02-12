@@ -123,11 +123,11 @@ export default function ListLayoutWithTags({ posts, pagination, tags, title }: L
 												<dt className="sr-only">Published on</dt>
 												<dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
 													<time
-														dateTime={post.createAt}
+														dateTime={post.createdAt}
 														suppressHydrationWarning
 													>
 														{formatDate(
-															post.createAt,
+															post.createdAt,
 															siteMetadata.locale
 														)}
 													</time>

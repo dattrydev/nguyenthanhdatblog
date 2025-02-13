@@ -51,7 +51,7 @@ const SearchButton = () => {
 		setKeyword('');
 		setSearchResults([]);
 		setIsOpen(false); // Đóng modal sau khi chọn bài viết
-		router.push(`/posts/${slug}`);
+		router.push(`/blog/${slug}`);
 	};
 
 	const handleOutsideClick = (event: React.MouseEvent) => {

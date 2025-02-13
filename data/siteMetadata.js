@@ -15,7 +15,7 @@ const siteMetadata = {
 	x: 'https://twitter.com/dattrydev',
 	facebook: 'https://facebook.com/dattrydev',
 	// youtube: 'https://youtube.com/dattrydev',
-	linkedin: 'https://www.linkedin.com/dattrydev',
+	linkedin: 'https://www.linkedin.com/in/dattrydev',
 	threads: 'https://www.threads.net/dattrydev',
 	instagram: 'https://www.instagram.com/dattrydev',
 	locale: 'vi-VN',

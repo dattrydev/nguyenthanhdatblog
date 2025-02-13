@@ -1,4 +1,4 @@
-import { withContentlayer } from 'next-contentlayer2';
+const { withContentlayer } = require('next-contentlayer2');
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -62,7 +62,7 @@ const unoptimized = process.env.UNOPTIMIZED ? true : undefined;
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
-export default () => {
+module.exports = () => {
 	const plugins = [withContentlayer, withBundleAnalyzer];
 	return plugins.reduce((acc, next) => next(acc), {
 		output,
@@ -93,7 +93,7 @@ export default () => {
 				},
 			];
 		},
-		webpack: (config) => {
+		webpack: (config, options) => {
 			config.module.rules.push({
 				test: /\.svg$/,
 				use: ['@svgr/webpack'],

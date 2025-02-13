@@ -50,7 +50,11 @@ export default function Home({ posts, tags }: { posts: PostList[]; tags: TagList
 													</h2>
 													<div className="flex flex-wrap">
 														{tags.map((tag) => (
-															<Tag key={tag.slug} text={tag.name} />
+															<Tag
+																key={tag.slug}
+																text={tag.name}
+																slug={tag.slug}
+															/>
 														))}
 													</div>
 												</div>

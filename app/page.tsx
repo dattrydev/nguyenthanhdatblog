@@ -1,9 +1,12 @@
-import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
-import { allBlogs } from 'contentlayer/generated'
-import Main from './Main'
+'use client';
 
-export default async function Page() {
-  const sortedPosts = sortPosts(allBlogs)
-  const posts = allCoreContent(sortedPosts)
-  return <Main posts={posts} />
+import Main from './Main';
+import { usePostContext } from '../context/PostContext';
+import { useTagContext } from '../context/TagContext';
+
+export default function Page() {
+	const { postList } = usePostContext();
+	const { tagList } = useTagContext();
+
+	return <Main posts={postList} tags={tagList} />;
 }

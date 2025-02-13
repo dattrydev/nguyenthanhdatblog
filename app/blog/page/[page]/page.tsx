@@ -1,42 +1,22 @@
+'use client';
+
 import ListLayout from '@/layouts/ListLayoutWithTags';
-import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
-import { allBlogs } from 'contentlayer/generated';
-import { notFound } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
+import { usePostContext } from '../../../../context/PostContext';
+import { useTagContext } from '../../../../context/TagContext';
 
-const POSTS_PER_PAGE = 5;
+export default function Page() {
+	const { postList, paging, updatePostListPagingRequest } = usePostContext();
+	const { tagList } = useTagContext();
 
-export const generateStaticParams = async () => {
-	const totalPages = Math.ceil(allBlogs.length / POSTS_PER_PAGE);
-	const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }));
+	const pathname = usePathname();
 
-	return paths;
-};
+	useEffect(() => {
+		const pageNumber = parseInt(pathname.split('/').pop() as string);
 
-export default async function Page(props: { params: Promise<{ page: string }> }) {
-	const params = await props.params;
-	const posts = allCoreContent(sortPosts(allBlogs));
-	const pageNumber = parseInt(params.page as string);
-	const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+		updatePostListPagingRequest({ page: pageNumber });
+	}, [pathname, updatePostListPagingRequest]);
 
-	// Return 404 for invalid page numbers or empty pages
-	if (pageNumber <= 0 || pageNumber > totalPages || isNaN(pageNumber)) {
-		return notFound();
-	}
-	const initialDisplayPosts = posts.slice(
-		POSTS_PER_PAGE * (pageNumber - 1),
-		POSTS_PER_PAGE * pageNumber
-	);
-	const pagination = {
-		currentPage: pageNumber,
-		totalPages: totalPages,
-	};
-
-	return (
-		<ListLayout
-			posts={posts}
-			initialDisplayPosts={initialDisplayPosts}
-			pagination={pagination}
-			title="All Posts"
-		/>
-	);
+	return <ListLayout posts={postList} pagination={paging} tags={tagList} title="All Posts" />;
 }

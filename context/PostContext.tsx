@@ -5,7 +5,7 @@ import { Post, PostList, PostListPagingRequest } from 'types/post';
 import { PagingResponse } from '../types/paging';
 import { ErrorResponse, isErrorResponse } from '../types/error-response';
 import { useDebounce } from 'use-debounce';
-import { getPostBySlugApi, getPostListApi } from '../app/api/post';
+import { getPostBySlugApi, getPostListApi, getPostListSearchApi } from '../app/api/post';
 import { handleError } from 'utils/handle-error';
 
 interface PostContextType {
@@ -16,6 +16,7 @@ interface PostContextType {
 
 	getPostList: () => Promise<PostList[] | ErrorResponse>;
 	getPostBySlug: (slug: string) => Promise<Post | ErrorResponse>;
+	getPostListSearch: (keyword: string) => Promise<PostList[] | ErrorResponse>;
 }
 
 export const PostContext = createContext<PostContextType | undefined>(undefined);
@@ -83,6 +84,23 @@ export const PostProvider = ({ children }: { children: ReactNode }) => {
 		}
 	}, []);
 
+	const getPostListSearch = useCallback(
+		async (keyword: string): Promise<PostList[] | ErrorResponse> => {
+			try {
+				const response = await getPostListSearchApi(keyword);
+				if (isErrorResponse(response)) {
+					return handleError(response);
+				}
+
+				return response.posts;
+			} catch (error) {
+				console.log('Error in getPostListSearchApi:', error);
+				return handleError(error);
+			}
+		},
+		[]
+	);
+
 	useEffect(() => {
 		const fetchPostList = async () => {
 			const postListPagingResponse = await getPostListApi(postListPagingRequest);
@@ -110,6 +128,7 @@ export const PostProvider = ({ children }: { children: ReactNode }) => {
 
 				getPostList,
 				getPostBySlug,
+				getPostListSearch,
 			}}
 		>
 			{children}

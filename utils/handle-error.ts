@@ -1,4 +1,4 @@
-import { ErrorResponse } from '@/types/error/error-response';
+import { ErrorResponse } from '../types/error-response';
 
 export const handleError = (error: any): ErrorResponse => {
 	return {

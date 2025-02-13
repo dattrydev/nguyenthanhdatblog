@@ -10,3 +10,7 @@ export const getPostListApi = async (
 export const getPostBySlugApi = async (request: string): Promise<Post> => {
 	return await apiGet('posts/' + request);
 };
+
+export const getPostListSearchApi = async (keyword: string): Promise<PostListResponse> => {
+	return await apiGet(`posts/search/${keyword}`);
+};

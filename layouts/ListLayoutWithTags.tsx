@@ -21,9 +21,7 @@ interface ListLayoutProps {
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
 	const pathname = usePathname();
-	const basePath = pathname
-		.replace(/^\//, '') // Remove leading slash
-		.replace(/\/page\/\d+$/, ''); // Remove any trailing /page
+	const basePath = pathname.replace(/^\//, '').replace(/\/page\/\d+$/, '');
 	console.log(pathname);
 	console.log(basePath);
 	const prevPage = currentPage - 1 > 0;
@@ -69,12 +67,6 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 
 export default function ListLayoutWithTags({ posts, pagination, tags, title }: ListLayoutProps) {
 	const pathname = usePathname();
-
-	const displayPosts = posts.map((post) => {
-		const tags = post.tags?.map((tag) => tag);
-		return { ...post, tags };
-	});
-
 	return (
 		<>
 			<div>
@@ -115,7 +107,7 @@ export default function ListLayoutWithTags({ posts, pagination, tags, title }: L
 					</div>
 					<div>
 						<ul>
-							{displayPosts.map((post) => {
+							{posts.map((post) => {
 								return (
 									<li key={post.slug} className="py-5">
 										<article className="flex flex-col space-y-2 xl:space-y-0">
@@ -137,7 +129,7 @@ export default function ListLayoutWithTags({ posts, pagination, tags, title }: L
 												<div>
 													<h2 className="text-2xl leading-8 font-bold tracking-tight">
 														<Link
-															href={`/${post.slug}`}
+															href={`/blog/${post.slug}`}
 															className="text-gray-900 dark:text-gray-100"
 														>
 															{post.title}

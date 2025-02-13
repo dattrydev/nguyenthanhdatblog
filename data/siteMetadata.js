@@ -3,7 +3,7 @@ const siteMetadata = {
 	title: 'Nguyen Thanh Dat Portfolio',
 	author: 'Nguyen Thanh Dat',
 	headerTitle: 'nguyenthanhdat.software',
-	description: 'A software engineer who loves to build things.',
+	description: 'A developer who loves to build things.',
 	language: 'en-us',
 	theme: 'system', // system, dark or light
 	siteUrl: 'https://nguyenthanhdat.software',
@@ -14,7 +14,7 @@ const siteMetadata = {
 	github: 'https://github.com/dattrydev',
 	x: 'https://twitter.com/dattrydev',
 	facebook: 'https://facebook.com/dattrydev',
-	youtube: 'https://youtube.com/dattrydev',
+	// youtube: 'https://youtube.com/dattrydev',
 	linkedin: 'https://www.linkedin.com/dattrydev',
 	threads: 'https://www.threads.net/dattrydev',
 	instagram: 'https://www.instagram.com/dattrydev',
@@ -81,10 +81,10 @@ const siteMetadata = {
 		},
 	},
 	search: {
-		provider: 'kbar', // kbar or algolia
-		kbarConfig: {
-			searchDocumentsPath: `${process.env.BASE_PATH || ''}/search.json`, // path to load documents to search
-		},
+		// provider: 'kbar', // kbar or algolia
+		// kbarConfig: {
+		// 	searchDocumentsPath: `${process.env.NEXT_PUBLIC_API_URL || ''}posts/search/`,
+		// },
 		// provider: 'algolia',
 		// algoliaConfig: {
 		//   // The application ID provided by Algolia

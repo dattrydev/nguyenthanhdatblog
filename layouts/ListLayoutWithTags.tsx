@@ -137,7 +137,11 @@ export default function ListLayoutWithTags({ posts, pagination, tags, title }: L
 													</h2>
 													<div className="flex flex-wrap">
 														{post.tags?.map((tag) => (
-															<Tag key={tag.slug} text={tag.name} />
+															<Tag
+																key={tag.slug}
+																text={tag.name}
+																slug={tag.slug}
+															/>
 														))}
 													</div>
 												</div>

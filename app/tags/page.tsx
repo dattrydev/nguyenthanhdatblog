@@ -19,7 +19,7 @@ export default function Page() {
 					{tagList.map((t) => {
 						return (
 							<div key={t.slug} className="mt-2 mr-5 mb-2">
-								<Tag text={t.slug} />
+								<Tag text={t.slug} slug={t.slug} />
 								<Link
 									href={`/tags/${t.slug}`}
 									className="-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300"

@@ -34,7 +34,7 @@ const SearchButton = () => {
 		};
 
 		fetchSearchResults();
-	}, [keyword]);
+	}, [getPostListSearch, keyword]);
 
 	// Tự động focus vào input khi mở modal
 	useEffect(() => {

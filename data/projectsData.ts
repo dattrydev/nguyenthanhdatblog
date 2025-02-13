@@ -7,6 +7,12 @@ interface Project {
 
 const projectsData: Project[] = [
 	{
+		title: 'Nguyen Thanh Dat Blog',
+		description: `My personal blog, where I write about software development and life.`,
+		imgSrc: '/static/images/nguyenthanhdat.png',
+		href: 'https://nguyenthanhdat.software',
+	},
+	{
 		title: 'Tiktoday.vn',
 		description: `A data analysis and business development support tool for TikTok.`,
 		imgSrc: '/static/images/tiktoday.png',
@@ -14,13 +20,13 @@ const projectsData: Project[] = [
 	},
 	{
 		title: 'M&C Repair Ticket',
-		description: `Management software for facilities and units.`,
+		description: `Management software for facilities and units for repair and maintenance.`,
 		imgSrc: '/static/images/mcbinhduong.jpeg',
 		href: '#',
 	},
 	{
 		title: 'HCMUS Behavior Point',
-		description: `HCMUS Student Behavior Point Website.`,
+		description: `A system to manage and evaluate student behavior at HCMUS.`,
 		imgSrc: '/static/images/hcmus.png',
 		href: 'https://hcmus.shub.edu.vn/',
 	},

@@ -24,14 +24,14 @@ export const HorizontalCard = ({ name, description, time, logoUrl, link }: Horiz
 			<img
 				src={logoUrl}
 				alt={name}
-				width={120}
-				height={120}
-				className="h-[120px] w-[120px] rounded-md object-cover"
+				width={140}
+				height={140}
+				className="h-[140px] w-[140px] rounded-md"
 			/>
 			<div className="flex flex-col justify-center">
-				<div className="text-2xl font-extrabold">{name}</div>
-				<div className="text-lg">{description}</div>
-				<div className="text-lg text-gray-500">{time}</div>
+				<div className="text-xl font-extrabold md:text-2xl">{name}</div>
+				<div className="text-md md:text-lg">{description}</div>
+				<div className="text-md text-gray-500 md:text-lg">{time}</div>
 			</div>
 		</div>
 	);

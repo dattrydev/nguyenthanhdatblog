@@ -82,6 +82,34 @@ module.exports = () => {
 					protocol: 'https',
 					hostname: 'nguyenthanhdat-blog-images.s3.ap-southeast-1.amazonaws.com',
 				},
+				{
+					protocol: 'https',
+					hostname: 'inseclab.uit.edu.vn',
+				},
+				{
+					protocol: 'https',
+					hostname: 'images.squarespace-cdn.com',
+				},
+				{
+					protocol: 'https',
+					hostname: 'images.lumacdn.com',
+				},
+				{
+					protocol: 'https',
+					hostname: 'images.unsplash.com',
+				},
+				{
+					protocol: 'https',
+					hostname: 'startedukg.com',
+				},
+				{
+					protocol: 'https',
+					hostname: 'cdn.sanity.io',
+				},
+				{
+					protocol: 'https',
+					hostname: 'img.icons8.com',
+				},
 			],
 			unoptimized,
 		},
@@ -93,7 +121,7 @@ module.exports = () => {
 				},
 			];
 		},
-		webpack: (config, options) => {
+		webpack: (config) => {
 			config.module.rules.push({
 				test: /\.svg$/,
 				use: ['@svgr/webpack'],

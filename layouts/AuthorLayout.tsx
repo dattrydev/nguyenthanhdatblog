@@ -68,7 +68,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'typescript'}
 									width={8}
 									height={8}
-									className={'h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<img
 									src={
@@ -77,7 +77,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'nextjs'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<img
 									src={
@@ -86,7 +86,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'react'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<FontAwesomeIcon icon={faJava} className={'h-8 w-8'} />
 								<img
@@ -96,7 +96,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'java springboot'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<FontAwesomeIcon icon={faNode} className={'h-8 w-8'} />
 								<FontAwesomeIcon icon={faPython} className={'h-8 w-8'} />
@@ -107,7 +107,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'azure'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<FontAwesomeIcon icon={faAws} className={'h-8 w-8'} />
 								<img
@@ -117,7 +117,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'mysql'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<img
 									src={
@@ -125,8 +125,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									}
 									alt={'typescript'}
 									width={8}
-									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<img
 									src={
@@ -135,7 +134,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'typescript'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<FontAwesomeIcon icon={faLinux} className={'h-8 w-8'} />
 								<FontAwesomeIcon icon={faUbuntu} className={'h-8 w-8'} />
@@ -146,7 +145,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'typescript'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<FontAwesomeIcon icon={faPhp} className={'h-8 w-8'} />
 								<img
@@ -156,7 +155,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'typescript'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 								<img
 									src={
@@ -165,7 +164,7 @@ export default function AuthorLayout({ children, content }: Props) {
 									alt={'typescript'}
 									width={8}
 									height={8}
-									className={'object-fit h-8 w-8'}
+									className={'h-8 w-8 dark:invert dark:filter'}
 								/>
 							</div>
 						</div>

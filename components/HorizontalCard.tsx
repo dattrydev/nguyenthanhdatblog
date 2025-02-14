@@ -1,7 +1,5 @@
 'use client';
 
-import Image from '@/components/Image';
-
 type HorizontalCardProps = {
 	name: string;
 	description: string;
@@ -23,13 +21,12 @@ export const HorizontalCard = ({ name, description, time, logoUrl, link }: Horiz
 			role={link ? 'link' : undefined}
 			tabIndex={link ? 0 : undefined}
 		>
-			<Image
+			<img
 				src={logoUrl}
 				alt={name}
 				width={120}
 				height={120}
 				className="h-[120px] w-[120px] rounded-md object-cover"
-				quality={100}
 			/>
 			<div className="flex flex-col justify-center">
 				<div className="text-2xl font-extrabold">{name}</div>

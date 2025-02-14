@@ -110,6 +110,10 @@ module.exports = () => {
 					protocol: 'https',
 					hostname: 'img.icons8.com',
 				},
+				{
+					protocol: 'https',
+					hostname: 'pngimg.com',
+				},
 			],
 			unoptimized,
 		},

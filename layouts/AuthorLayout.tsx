@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import type { Authors } from 'contentlayer/generated';
 import SocialIcon from '@/components/social-icons';
-import Image from '@/components/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faAws,
@@ -37,7 +36,7 @@ export default function AuthorLayout({ children, content }: Props) {
 					<div className="space-y-2 pt-8">
 						<div className="flex flex-col items-center space-x-2">
 							{avatar && (
-								<Image
+								<img
 									src={avatar}
 									alt="avatar"
 									width={192}
@@ -62,7 +61,7 @@ export default function AuthorLayout({ children, content }: Props) {
 								<FontAwesomeIcon icon={faHtml5} className={'h-8 w-8'} />
 								<FontAwesomeIcon icon={faCss3Alt} className={'h-8 w-8'} />
 								<FontAwesomeIcon icon={faJs} className={'h-8 w-8'} />
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=vMqgHSToxrJR&format=png&color=000000'
 									}
@@ -70,9 +69,8 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'h-8 w-8'}
-									quality={100}
 								/>
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=yUdJlcKanVbh&format=png&color=000000'
 									}
@@ -80,9 +78,8 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=0Da6k7SMq0hs&format=png&color=000000'
 									}
@@ -90,10 +87,9 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
 								<FontAwesomeIcon icon={faJava} className={'h-8 w-8'} />
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=90519&format=png&color=000000'
 									}
@@ -101,11 +97,10 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
 								<FontAwesomeIcon icon={faNode} className={'h-8 w-8'} />
 								<FontAwesomeIcon icon={faPython} className={'h-8 w-8'} />
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000'
 									}
@@ -113,10 +108,9 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
 								<FontAwesomeIcon icon={faAws} className={'h-8 w-8'} />
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=39855&format=png&color=000000'
 									}
@@ -124,9 +118,8 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=25010&format=png&color=000000'
 									}
@@ -134,9 +127,8 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000'
 									}
@@ -144,11 +136,10 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
 								<FontAwesomeIcon icon={faLinux} className={'h-8 w-8'} />
 								<FontAwesomeIcon icon={faUbuntu} className={'h-8 w-8'} />
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=1BC75jFEBED6&format=png&color=000000'
 									}
@@ -156,10 +147,9 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
 								<FontAwesomeIcon icon={faPhp} className={'h-8 w-8'} />
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=QEQQKirln6Tf&format=png&color=000000'
 									}
@@ -167,9 +157,8 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
-								<Image
+								<img
 									src={
 										'https://img.icons8.com/?size=100&id=GflC6KLkdd0Y&format=png&color=000000'
 									}
@@ -177,7 +166,6 @@ export default function AuthorLayout({ children, content }: Props) {
 									width={8}
 									height={8}
 									className={'object-fit h-8 w-8'}
-									quality={100}
 								/>
 							</div>
 						</div>

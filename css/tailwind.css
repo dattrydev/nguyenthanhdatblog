@@ -133,3 +133,14 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+@layer base {
+  h1, h2, h3 {
+    @apply text-black dark:text-white;
+  }
+
+  b, strong {
+    @apply text-black dark:text-white;
+  }
+}
+

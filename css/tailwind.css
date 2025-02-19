@@ -133,3 +133,15 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+.prose h1, .prose h2, .prose h3, .prose strong, .prose .font-bold {
+  color: var(--tw-prose-headings);
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose strong,
+.dark .prose .font-bold {
+  color: white;
+}

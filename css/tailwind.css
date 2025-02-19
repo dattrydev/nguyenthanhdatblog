@@ -134,6 +134,13 @@ input:-webkit-autofill:focus {
   vertical-align: middle;
 }
 
+:root {
+  --tw-prose-headings: black;
+  --tw-prose-bold: black;
+  --tw-prose-counters: black;
+}
+
+
 .dark {
   --tw-prose-headings: white;
   --tw-prose-bold: white;

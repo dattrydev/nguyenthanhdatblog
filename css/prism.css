@@ -1,15 +1,8 @@
 @reference "./tailwind.css";
 
-/**
- * CSS Styles for code highlighting.
- * Feel free to customize token styles 
- * by copying from a prismjs compatible theme:
- * https://github.com/PrismJS/prism-themes
- */
-
 /* Code title styles */
 .remark-code-title {
-  @apply rounded-xs bg-gray-700 px-5 py-3 font-mono text-sm font-bold text-gray-200 dark:bg-gray-800;
+  @apply rounded-xs bg-gray-700 px-5 py-3 font-mono text-sm font-bold text-gray-200 dark:bg-gray-800 dark:text-gray-300;
 }
 
 .remark-code-title + div > pre {
@@ -26,117 +19,111 @@
 }
 
 .code-line.inserted {
-  @apply bg-green-500/20;
+  @apply bg-green-500/20 dark:bg-green-700/30;
 }
 
 .code-line.deleted {
-  @apply bg-red-500/20;
+  @apply bg-red-500/20 dark:bg-red-700/30;
 }
 
 .highlight-line {
-  @apply border-primary-500 -mx-4 border-l-4 bg-gray-700/50;
+  @apply border-primary-500 -mx-4 border-l-4 bg-gray-700/50 dark:bg-gray-800/50;
 }
 
 .line-number::before {
-  @apply mr-4 -ml-2 inline-block w-4 text-right text-gray-400;
+  @apply mr-4 -ml-2 inline-block w-4 text-right text-gray-400 dark:text-gray-500;
   content: attr(line);
 }
 
-/* Token styles */
-/**
- * MIT License
- * Copyright (c) 2018 Sarah Drasner
- * Sarah Drasner's[@sdras] Night Owl
- * Ported by Sara vieria [@SaraVieira]
- * Added by Souvik Mandal [@SimpleIndian]
- */
-.token.comment,
-.token.prolog,
-.token.cdata {
-  color: rgb(99, 119, 119);
+/* Code syntax highlighting for dark mode */
+.dark .token.comment,
+.dark .token.prolog,
+.dark .token.cdata {
+  color: rgb(149, 161, 161);
   font-style: italic;
 }
 
-.token.punctuation {
-  color: rgb(199, 146, 234);
+.dark .token.punctuation {
+  color: rgb(229, 186, 255);
 }
 
-.namespace {
-  color: rgb(178, 204, 214);
-}
-
-.token.deleted {
-  color: rgba(239, 83, 80, 0.56);
+.dark .token.deleted {
+  color: rgba(239, 83, 80, 0.75);
   font-style: italic;
 }
 
-.token.symbol,
-.token.property {
-  color: rgb(128, 203, 196);
+.dark .token.symbol,
+.dark .token.property {
+  color: rgb(138, 223, 213);
 }
 
-.token.tag,
-.token.operator,
-.token.keyword {
-  color: rgb(127, 219, 202);
+.dark .token.tag,
+.dark .token.operator,
+.dark .token.keyword {
+  color: rgb(147, 239, 222);
 }
 
-.token.boolean {
-  color: rgb(255, 88, 116);
+.dark .token.boolean {
+  color: rgb(255, 120, 140);
 }
 
-.token.number {
-  color: rgb(247, 140, 108);
+.dark .token.number {
+  color: rgb(247, 160, 128);
 }
 
-.token.constant,
-.token.function,
-.token.builtin,
-.token.char {
-  color: rgb(130, 170, 255);
+.dark .token.constant,
+.dark .token.function,
+.dark .token.builtin,
+.dark .token.char {
+  color: rgb(150, 190, 255);
 }
 
-.token.selector,
-.token.doctype {
-  color: rgb(199, 146, 234);
+.dark .token.selector,
+.dark .token.doctype {
+  color: rgb(219, 176, 250);
   font-style: italic;
 }
 
-.token.attr-name,
-.token.inserted {
-  color: rgb(173, 219, 103);
+.dark .token.attr-name,
+.dark .token.inserted {
+  color: rgb(183, 239, 123);
   font-style: italic;
 }
 
-.token.string,
-.token.url,
-.token.entity,
-.language-css .token.string,
-.style .token.string {
-  color: rgb(173, 219, 103);
+.dark .token.string,
+.dark .token.url,
+.dark .token.entity,
+.dark .language-css .token.string,
+.dark .style .token.string {
+  color: rgb(193, 239, 133);
 }
 
-.token.class-name,
-.token.atrule,
-.token.attr-value {
-  color: rgb(255, 203, 139);
+.dark .token.class-name,
+.dark .token.atrule,
+.dark .token.attr-value {
+  color: rgb(255, 213, 159);
 }
 
-.token.regex,
-.token.important,
-.token.variable {
-  color: rgb(214, 222, 235);
+.dark .token.regex,
+.dark .token.important,
+.dark .token.variable {
+  color: rgb(224, 232, 245);
 }
 
-.token.important,
-.token.bold {
+.dark .token.important,
+.dark .token.bold {
   font-weight: bold;
 }
 
-.token.italic {
+.dark .token.italic {
   font-style: italic;
 }
 
-.token.table {
+.dark .token.table {
   display: inline;
+}
+
+/* Ensure background and text color contrast */
+pre {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200;
 }

@@ -49,7 +49,7 @@ export default function Home({ posts, tags }: { posts: PostList[]; tags: TagList
 														</Link>
 													</h2>
 													<div className="flex flex-wrap">
-														{tags.map((tag) => (
+														{post.tags.map((tag) => (
 															<Tag
 																key={tag.slug}
 																text={tag.name}

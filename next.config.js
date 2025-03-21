@@ -114,6 +114,10 @@ module.exports = () => {
 					protocol: 'https',
 					hostname: 'pngimg.com',
 				},
+				{
+					protocol: 'https',
+					hostname: 'media.licdn.com',
+				},
 			],
 			unoptimized,
 		},

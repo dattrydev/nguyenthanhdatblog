@@ -1,5 +1,13 @@
 [
 	{
+		"id": 0,
+		"name": "AWS Cloud for beginner Certificate",
+		"description": "AWS Cloud for beginner (Vietnamese) Certificate",
+		"time": "3.2025",
+		"logoUrl": "https://media.licdn.com/dms/image/v2/D5612AQGA4yj75IvMCg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1727359370018?e=2147483647&v=beta&t=zjA3R5H8bWSIzd6XfnGQff3ihqHBMgrmYmnpKgDrMqo",
+		"link": "https://www.udemy.com/certificate/UC-3a78d257-d15a-4256-bad5-6e4668d0f012"
+	},
+	{
 		"id": 1,
 		"name": "TOEIC S&W Certificate",
 		"description": "TOEIC S&W Certificate with overall score of 300 (Speaking: 130, Writing: 170)",

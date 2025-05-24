@@ -1,10 +1,18 @@
 [
   {
     "id": 1,
+    "name": "Designveloper (DSV)",
+    "description": "Fullstack Developer",
+    "time": "4.2025 - Present",
+    "logoUrl": "https://www.designveloper.com/wp-content/uploads/2018/11/logo.jpg",
+    "link": "https://www.designveloper.com"
+  },
+  {
+    "id": 2,
     "name": "SHub Technology JSC.",
     "description": "Software Developer",
-    "time": "5.2024 - 8.2024",
+    "time": "5.2024 - 1.2025",
     "logoUrl": "https://images.squarespace-cdn.com/content/v1/5930dc9237c5817c00b10842/1655892696437-CBKR0F5MMHNADQ4P3RUI/N1044_Logo-SHub.jpg?format=750w",
-    "link": "https://shub.vn/"
+    "link": "https://shub.vn"
   }
 ]

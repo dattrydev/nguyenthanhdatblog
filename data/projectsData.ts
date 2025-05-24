@@ -9,8 +9,8 @@ const projectsData: Project[] = [
 	{
 		title: 'DSV Candidate Testing',
 		description: `An assessment platform for employers to screen candidates effectively..`,
-		imgSrc: 'https://www.designveloper.com/wp-content/uploads/2018/11/logo.jpg',
-		href: '#',
+		imgSrc: '/static/images/dsv.jpg',
+		href: 'https://www.designveloper.com/',
 	},
 	{
 		title: 'Nguyen Thanh Dat Blog',

@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "name": "Hitachi Digital Services Vietnam",
+    "description": "Fullstack Java Developer",
+    "time": "9.2025 - Present",
+    "logoUrl": "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDExOTkzMywicHVyIjoiYmxvYl9pZCJ9fQ==--b4134b38cacb0645c5101d99b0974d171bca3e6f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlszMDAsMzAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--e1d036817a0840c585f202e70291f5cdd058753d/Hitachi-Shield-Mark-Red-White-Background-200x200.png",
+    "link": "https://www.hitachids.com/vn-english/"
+  },
+  {
+    "id": 2,
     "name": "Designveloper (DSV)",
     "description": "Fullstack Developer",
     "time": "4.2025 - Present",
@@ -8,7 +16,7 @@
     "link": "https://www.designveloper.com"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "SHub Technology JSC.",
     "description": "Software Developer",
     "time": "5.2024 - 1.2025",

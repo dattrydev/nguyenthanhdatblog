@@ -1,4 +1,4 @@
-const { withContentlayer } = require('next-contentlayer2');
+import { withContentlayer } from 'next-contentlayer2';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -62,7 +62,7 @@ const unoptimized = process.env.UNOPTIMIZED ? true : undefined;
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
-module.exports = () => {
+export default () => {
 	const plugins = [withContentlayer, withBundleAnalyzer];
 	return plugins.reduce((acc, next) => next(acc), {
 		output,
@@ -121,6 +121,10 @@ module.exports = () => {
 				{
 					protocol: 'https',
 					hostname: 'designveloper.com',
+				},
+				{
+					protocol: 'https',
+					hostname: 'itviec.com',
 				},
 			],
 			unoptimized,

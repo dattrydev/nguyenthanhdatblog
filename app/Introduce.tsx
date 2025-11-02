@@ -14,7 +14,7 @@ export const Introduce = () => {
 					className={'rounded-2xl'}
 				/>
 				<div className={'mt-5 flex flex-col gap-2 md:mt-0'}>
-					<h1 className="bg-clip-text text-6xl font-extrabold">Hello, Xin chao!</h1>
+					<h1 className="bg-clip-text text-6xl font-extrabold">Hello, Xin chào!</h1>
 					<TypedText />
 				</div>
 			</div>
